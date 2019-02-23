@@ -1,0 +1,27 @@
+{
+  "name": "game-scrape",
+  "version": "1.0.0",
+  "description": "Web Scrapping application with Mongoose, Cheerio, MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xoamara/game-scrape.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xoamara/game-scrape/issues"
+  },
+  "homepage": "https://github.com/xoamara/game-scrape#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.1",
+    "mongoose": "^5.4.15"
+  }
+}
