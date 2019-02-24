@@ -2,9 +2,11 @@
   "name": "game-scrape",
   "version": "1.0.0",
   "description": "Web Scrapping application with Mongoose, Cheerio, MongoDB",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.1",
-    "mongoose": "^5.4.15"
+    "mongoose": "^5.4.15",
+    "nodemon": "^1.18.10"
   }
 }

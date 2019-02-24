@@ -1,0 +1,15 @@
+<div id="wrapper">
+  <h1>Game Scraper</h1>
+  <h2><i>All your games r belong to me.</i></h2>
+  <div id="articles">
+    {{#each articles}}
+    <p data-id="{{this._id}}" class="list-group-item">{{this.title}}<br>
+      <a href="{{this.link}}">{{this.link}}</a>
+    </p>
+    {{/each}}
+  </div>
+
+  <div id="notes"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="app.js"></script>
