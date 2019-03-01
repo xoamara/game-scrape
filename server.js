@@ -7,7 +7,7 @@ var exphbs = require("express-handlebars");
 // Require models
 const db = require("./models");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // Middleware
@@ -32,6 +32,12 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlin
 mongoose.connect(MONGODB_URI);
 
 // Routes
+
+// Main page display route
+
+app.get("/", function (req, res) {
+  res.render("index");
+});
 
 // A GET route for scraping
 app.get("/scrape", function (req, res) {
