@@ -33,12 +33,6 @@ mongoose.connect(MONGODB_URI);
 
 // Routes
 
-// Main page display route
-
-app.get("/", function (req, res) {
-  res.render("index");
-});
-
 // A GET route for scraping
 app.get("/scrape", function (req, res) {
   axios.get("https://www.theverge.com/games").then(function (response) {
