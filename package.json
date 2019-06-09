@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/xoamara/game-scrape#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.1",
